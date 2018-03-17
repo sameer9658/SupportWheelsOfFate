@@ -1,0 +1,55 @@
+Hi Team,
+
+1.For running the application you need to change the DB details according to your DB server in resources.properties.
+
+2.Tomcat web server can change the port number in application.properties.
+
+3.Any IDE(Intelij/Eclipse/NETBeans)
+
+4.Maven Installed.
+
+5.Java 1.7 or more and Tomcat 7.
+
+6.You can change the time to assign the next employee.
+10*1000=10000=10Sec
+60*1000=60000=One min
+15*60*1000=900000=One hr
+12*60*60*1000=43200000=12hr
+
+7.You can change the time to stop the poller to pick the next employee(last for 15 days as mentioned)
+10*1000=10000=10Sec
+60*1000=60000=One min
+15*60*1000=900000=One hr
+24*60*60*1000=86400000=24hr
+15*24*60*60*1000=1296000000=15days
+
+8.Create table 
+
+CREATE TABLE "SUPPORT_WHEELS_OF_FATE" 
+   (	"EMP_NAME" VARCHAR2(20 BYTE) NOT NULL ENABLE, 
+	"UPDATED_DATE_TIME" DATE, 
+	"WORK_HOUR_COUNT" NUMBER DEFAULT 0
+   );
+   
+9.Insert Employee name
+
+
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP1',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP2',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP3',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP4',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP5',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP6',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP7',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP8',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP9',null,0);
+Insert into SUPPORT_WHEELS_OF_FATE (EMP_NAME,UPDATED_DATE_TIME,WORK_HOUR_COUNT) values ('EMP10',null,0);
+commit;
+
+10.You can change the UPDATED_DATE_TIME to get the results accordingly.
+
+11.http://localhost:8090/ you can see the schedule of employee.
+
+12.Can start the application by running as application in any above mentioned IDE StartSupportWheelsOfFateApp.java 
+
+Anything required please let me know.
